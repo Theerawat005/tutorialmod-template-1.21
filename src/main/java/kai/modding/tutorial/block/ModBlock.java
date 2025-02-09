@@ -13,7 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlock {
-    public static final Block MAGIC_ORE = registerBlock("magic_ore",
+    public static final Block MAGIC_ORE_BLOCK = registerBlock("magic_ore_block",
             new Block(AbstractBlock.Settings.create().strength(3.0f, 3.0f).sounds(BlockSoundGroup.STONE).requiresTool()));
 
 
@@ -31,7 +31,7 @@ public class ModBlock {
         Tutorialmod.LOGGER.info("Registering Mod Block for "+ Tutorialmod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlock.MAGIC_ORE);
+            fabricItemGroupEntries.add(ModBlock.MAGIC_ORE_BLOCK);
         });
     }
 }
