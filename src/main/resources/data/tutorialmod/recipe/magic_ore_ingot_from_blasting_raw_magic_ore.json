@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "magic_ore_ingot",
+  "ingredient": {
+    "item": "tutorialmod:raw_magic_ore"
+  },
+  "result": {
+    "id": "tutorialmod:magic_ore_ingot"
+  }
+}

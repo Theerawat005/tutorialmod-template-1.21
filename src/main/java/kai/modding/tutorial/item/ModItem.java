@@ -10,7 +10,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItem {
-    public  static final Item MAGIC_DUST = registerItem("magic_dust", new Item(new Item.Settings()));
+    public static final Item MAGIC_DUST = registerItem("magic_dust", new Item(new Item.Settings()));
+    public static final Item RAW_MAGIC_ORE = registerItem("raw_magic_ore", new Item(new Item.Settings()));
+    public static final Item MAGIC_ORE_INGOT = registerItem("magic_ore_ingot", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Tutorialmod.MOD_ID, name), item);
@@ -22,6 +24,8 @@ public class ModItem {
         //เป็นการจัดให้อยู่ในกลุ่ม item กลุ่มไหน ในที่นี้บอก ItemGroups.INGREDIENTS <-- ให้อยู่ในกลุ่ม Ingredients
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(MAGIC_DUST);
+            fabricItemGroupEntries.add(RAW_MAGIC_ORE);
+            fabricItemGroupEntries.add(MAGIC_ORE_INGOT);
         });
     }
 }

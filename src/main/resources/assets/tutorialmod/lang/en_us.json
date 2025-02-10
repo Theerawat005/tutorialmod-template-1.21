@@ -1,5 +1,11 @@
 {
   "item.tutorialmod.magic_dust": "Magic Dust",
+  "item.tutorialmod.raw_magic_ore": "Raw Magic Ore",
+  "item.tutorialmod.magic_ore_ingot": "Magic Ore Ingot",
 
-  "block.tutorialmod.magic_ore_block": "Magic Ore"
+  "block.tutorialmod.magic_ore": "Magic Ore",
+  "block.tutorialmod.magic_block": "Magic Block",
+
+  "itemgroup.tutorialmod.magic_items": "Magic Item",
+  "itemgroup.tutorialmod.magic_blocks": "Magic Block"
 }
