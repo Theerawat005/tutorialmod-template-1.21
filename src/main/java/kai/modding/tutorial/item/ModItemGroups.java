@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModBlock.MAGIC_BLOCK);
                     }).build());
 
+
     public static void registerItemGroups() {
         Tutorialmod.LOGGER.info("Registering Item Groups for" + Tutorialmod.MOD_ID);
     }

@@ -4,7 +4,6 @@ import kai.modding.tutorial.block.ModBlock;
 import kai.modding.tutorial.item.ModItem;
 import kai.modding.tutorial.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,8 +14,9 @@ public class Tutorialmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-		ModItem.registerModItems();
-		ModBlock.registerModBlock();
+		ModItemGroups.registerItemGroups(); //เพิ่มกลุ่มของ Item
+		ModItem.registerModItems(); //เพิ่ม Item
+		ModBlock.registerModBlock(); //เพิ่ม Block
     }
+
 }
